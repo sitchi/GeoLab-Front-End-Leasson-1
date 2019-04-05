@@ -1,2 +1,2 @@
-# GeoLab-Front-End-Leasson-1
+# GeoLab-Front-End-Lessons
 GeoLab Front End - Lessons
