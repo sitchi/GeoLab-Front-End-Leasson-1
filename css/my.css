@@ -61,14 +61,10 @@ body {
     }
 }
 
-.div-fish {
-    height: 0px;
-}
-
 .fish1 {
     top: 50px;
     left: 55%;
-    position: relative;
+    position: fixed;
     overflow-y: hidden;
     z-index: -1;
     animation: fish-1 25s infinite linear;
