@@ -1,18 +1,76 @@
+body {
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    background-color: #104d4e;
+}
+
+#myNavbar {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+
 .navbar {
-  margin-top: 10px;
-  margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .submarine-geolab {
-  padding: 3rem 1.5rem;
-  text-align: center;
+    padding: 1rem 1.5rem;
+    text-align: center;
 }
 
 .img-fluid {
-  margin-top: 0;
-  margin-bottom: 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
-#myNavbar{
-	font-family: "BPG Nino Mtavruli", sans-serif;
+.submarine-img {
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+}
+
+.submarine-img:hover {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+@keyframes fish-1 {
+    0% {
+        top: 50px;
+        left: 55%;
+        transform: rotateY(0deg);
+    }
+
+    49.5% {
+        top: 100px;
+        left: 95%;
+        transform: rotateY(0deg);
+    }
+
+    50.5% {
+        top: 100px;
+        left: 95%;
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        top: 50px;
+        left: 55%;
+        transform: rotateY(180deg);
+    }
+}
+
+.fish1 {
+    top: 50px;
+    left: 55%;
+    position: fixed;
+    overflow-y: hidden;
+    z-index: -1;
+    animation: fish-1 25s infinite linear;
+}
+
+footer {
+    text-align: center;
+    color: #e9ecef;
 }
